@@ -111,6 +111,8 @@ atmButton.addEventListener("click", function () {
         return amount;
         atmPrintFunction();
         currencyDetails.innerHTML = `There are ${NairaBill_1000} 1000bills, ${NairaBill_500} 500bills, ${NairaBill_200} 200bills, ${NairaBill_100} 100bills, ${NairaBill_50} 50bills, ${NairaBill_20} 20bills, ${NairaBill_10} 10bills, and ${NairaBill_5} 5bills in the ATM tray. Please collect your cash, thank you!`
+        nameValue.placeholder = "";
+        locationValue.placeholder = "";
     }
 })
 
