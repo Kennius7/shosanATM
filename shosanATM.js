@@ -7,6 +7,7 @@ const atmButton = document.getElementById("withdrawBtn");
 const atmLocationPrinter = document.getElementById("locationImport");
 const nameValue = document.getElementById("nameID");
 const locationValue = document.getElementById("locationID");
+const currencyDetails = document.getElementById("currencyID");
 
 let t = 0;
 let b = 0;
@@ -82,7 +83,6 @@ atmPrintFunction = () => {
     return NairaBill_10;
     return NairaBill_5;
 }
-atmPrintFunction();
 
 
 
@@ -106,7 +106,11 @@ atmButton.addEventListener("click", function () {
         locationValue.placeholder = "Withdraw amount?"
     }
     else if (nameValue.value != "" && locationValue.value != "" && AtmArray[0][0] == nameValue.value) {
-      
+        bankAndAmtArray[0] = nameValue.value;
+        amount = locationValue.value;
+        return amount;
+        atmPrintFunction();
+        currencyDetails.innerHTML = `There are ${NairaBill_1000} 1000bills, ${NairaBill_500} 500bills, ${NairaBill_200} 200bills, ${NairaBill_100} 100bills, ${NairaBill_50} 50bills, ${NairaBill_20} 20bills, ${NairaBill_10} 10bills, and ${NairaBill_5} 5bills in the ATM tray. Please collect your cash, thank you!`
     }
 })
 
