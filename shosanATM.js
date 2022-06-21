@@ -72,6 +72,15 @@ atmPrintFunction = () => {
     remainder7 = remainder6 % 10;
     
     NairaBill_5 = Math.floor(remainder7 / 5);
+    
+    return NairaBill_1000;
+    return NairaBill_500;
+    return NairaBill_200;
+    return NairaBill_100;
+    return NairaBill_50;
+    return NairaBill_20;
+    return NairaBill_10;
+    return NairaBill_5;
 }
 
 
