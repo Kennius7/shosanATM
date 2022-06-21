@@ -82,6 +82,9 @@ atmPrintFunction = () => {
     return NairaBill_10;
     return NairaBill_5;
 }
+atmPrintFunction();
+
+
 
 
 let firstInstance = 0;
