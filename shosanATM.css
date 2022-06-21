@@ -1,0 +1,77 @@
+
+body{
+    width: 90%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0));
+}
+#atmHeader{
+    width: 250px;
+    height: 40px;
+   
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    border-color: goldenrod;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(158, 182, 103, 0.8), rgba(0, 0, 0, 0.4));
+}
+#atmFormID{
+    width: 250px;
+    height: 150px;
+    margin-left: 6px;
+    margin-top: 150px;
+    border-color: goldenrod;
+    border-style: solid;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(191, 202, 165, 1.0), rgba(0, 0, 0, 0.1));
+}
+#nameID{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: goldenrod;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+#locationID{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: goldenrod;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+#withdrawBtn{
+    background-image: linear-gradient(rgba(191, 202, 165, 1.0), rgba(0, 0, 0, 0.1));
+    width: 150px;
+    height: 30px;
+    color: brown;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-left: 120px;
+    border-radius: 5px;
+    border-color: goldenrod;
+    border-style: solid;
+}
+#wthDiv{
+    width: 200px;
+    height: 80px;
+    border-color: goldenrod;
+    border-style: solid;
+}
+
+
+
+
+
+
+
+
+
