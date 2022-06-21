@@ -93,7 +93,7 @@ atmButton.addEventListener("click", function () {
     if (nameValue.value == "" || locationValue.value == "") {
         alert("Fill all fields")
     }
-    else if (nameValue.value != "" && locationValue.value != "") {
+    else if (nameValue.value != "" && locationValue.value != "" && AtmArray[0][0] != nameValue.value) {
         nameAndLocArray[0] = nameValue.value;
         nameAndLocArray[1] = locationValue.value;
         clearInterval(setInt1);
@@ -104,6 +104,9 @@ atmButton.addEventListener("click", function () {
         locationValue.value = "";
         nameValue.placeholder = "What bank do you bank with?";
         locationValue.placeholder = "Withdraw amount?"
+    }
+    else if (nameValue.value != "" && locationValue.value != "" && AtmArray[0][0] == nameValue.value) {
+      
     }
 })
 
