@@ -13,14 +13,21 @@
         <div id="locationImport"></div>
     </div>
     <form action="" id="atmFormID">
-        <input id="nameID" type="text" placeholder="Enter your Full name here.">
-        <input id="locationID" type="text" placeholder="Enter your city here.">
+        <div id="nameDiv">
+            <label for="nameID" id="nameLabel">Full Name</label>
+            <input id="nameID" type="text" placeholder="Please enter your full name.">
+        </div>
+        <div id="locationDiv">
+            <label for="locationID" id="locationLabel">Location</label>
+            <input id="locationID" type="text" placeholder="Please enter your location.">
+        </div>
     </form>
     <div id="wthDiv">
-        <button id="withdrawBtn"></button>
+        <button id="insertBtn">Insert ATM Card</button>
         <div id="currencyID"></div>
     </div>
 
     <script src="shosanATM.js"></script>
+    <script type="module" src="array1.js"></script>
 </body>
 </html>
