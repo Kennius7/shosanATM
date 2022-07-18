@@ -1,7 +1,7 @@
 
 
 
-// const nameAndLocArray = [];
+
 // const bankAndAmtArray = [];
 // const AtmArray = [nameAndLocArray, bankAndAmtArray];
 
@@ -11,10 +11,19 @@ const fullName = document.getElementById("name");
 const pinCode = document.getElementById("pin");
 const logBtn = document.getElementById("login");
 const alertMsg = document.getElementById("alert");
+const formBox = document.getElementById("formID");
+const atmButtons = document.getElementsByClassName("btn");
+const theSameATMBtns1 = document.getElementById("topButtons1");
+const theSameATMBtns2 = document.getElementById("topButtons2");
+const theSameATMBtns3 = document.getElementById("bottomButtons1");
+const theSameATMBtns4 = document.getElementById("bottomButtons2");
 
 
 
-
+theSameATMBtns1.style.display = "none";
+theSameATMBtns2.style.display = "none";
+theSameATMBtns3.style.display = "none";
+theSameATMBtns4.style.display = "none";
 
 let tick1 = 0;
 let tick2 = 0;
@@ -28,6 +37,7 @@ ErrMsg1 = () =>{
     }, 1000);
     setTimeout(() => {
         clearInterval(setInt1);
+        alertMsg.innerHTML = "";
     }, 3000);
 }
 
@@ -38,19 +48,49 @@ ErrMsg2 = () =>{
     }, 1000);
     setTimeout(() => {
         clearInterval(setInt2);
+        alertMsg.innerHTML = "";
     }, 3000);
 }
+
+
+
+
+const nameArray = [];
 
 loginValidate = () => {
     if (fullName.value === "" || pinCode.value === "") {
         event.preventDefault();
         ErrMsg1();
     }
-    else if (pinCode.value !== 0000 && fullName.value !== "" && pinCode.value !== "") {
+    else if (pinCode.value != 0000 && fullName.value !== "" && pinCode.value !== "") {
         event.preventDefault();
         ErrMsg2();
     }
+    else if (pinCode.value == 0000 && fullName.value !== "") {
+        event.preventDefault();
+        nameArray[0] = fullName.value;
+        formBox.style.display = "none";
+        theSameATMBtns1.style.display = "flex";
+        theSameATMBtns2.style.display = "flex";
+        theSameATMBtns3.style.display = "flex";
+        theSameATMBtns4.style.display = "flex";
+        header.innerHTML = `Welcome, ${nameArray[0]}. <br> How may we be of service to you?`
+    }
 }
+
+exitBtn = () => {
+    theSameATMBtns1.style.display = "none";
+    theSameATMBtns2.style.display = "none";
+    theSameATMBtns3.style.display = "none";
+    theSameATMBtns4.style.display = "none";
+    formBox.style.display = "grid";
+    header.innerHTML = "Shosan PayBank Services (SPB)";
+    fullName.value = "";
+    pinCode.value = "";
+}
+
+
+
 
 
 
