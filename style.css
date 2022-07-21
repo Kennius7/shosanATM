@@ -73,6 +73,14 @@ form button{
     letter-spacing: 5px;
     text-align: center;
 }
+#atmImg{
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    border-color: goldenrod;
+    border-style: solid;
+    border-radius: 4px;
+}
 #topButtons1{
     display: flex;
     justify-content: space-between;
@@ -254,6 +262,17 @@ form button{
         border-width: 0px;
     }
 }
+
+
+
+styleTest{
+    color: black;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
 
 /* 
 #atmHeader{
