@@ -322,7 +322,7 @@ goBack = () => {
         atmImage.style.display = "none";
         alertMsg.innerHTML = "";
         formBox.style.display = "grid";
-        formBox.style.marginTop = "45%"
+        // formBox.style.marginTop = "45%"
         fullName.style.display = "flex";
         formPinTarget.style.display = "flex";
         logBtn.style.display = "block";
@@ -373,7 +373,7 @@ goBack = () => {
         theSameATMBtns3.style.display = "none";
         theSameATMBtns4.style.display = "flex";
         formBox.style.display = "grid";
-        formBox.style.marginTop = "45%";
+        // formBox.style.marginTop = "45%";
         atmImage.style.display = "none";
         fullName.style.display = "block";
         logBtn.style.display = "block";
@@ -397,7 +397,7 @@ exitOtherAmountBtn = () => {
         theSameATMBtns3.style.display = "none";
         theSameATMBtns4.style.display = "flex";
         formBox.style.display = "grid";
-        formBox.style.marginTop = "45%";
+        // formBox.style.marginTop = "45%";
         atmImage.style.display = "none";
         fullName.style.display = "block";
         logBtn.style.display = "block";
@@ -411,23 +411,23 @@ exitOtherAmountBtn = () => {
         console.log(tracker1);
     }
     else if (tracker1 !== 2) {
-        theSameATMBtns1.style.display = "none";
-        theSameATMBtns2.style.display = "none";
-        theSameATMBtns3.style.display = "none";
-        theSameATMBtns4.style.display = "none";
-        atmImage.style.display = "none";
-        alertMsg.innerHTML = "";
-        formBox.style.display = "grid";
-        formBox.style.marginTop = "45%"
-        fullName.style.display = "flex";
-        formPinTarget.style.display = "flex";
-        logBtn.style.display = "block";
-        fullName222[0].value = "";
-        fullName222[0].placeholder = "                 Full Name";
-        header.innerHTML = "Shosan PayBank Services (SPB)";
-        logBtn.innerHTML = "Login";
-        fullName.value = "";
-        pinCode.value = "";
+        window.location.href = "index.html";
+        // theSameATMBtns1.style.display = "none";
+        // theSameATMBtns2.style.display = "none";
+        // theSameATMBtns3.style.display = "none";
+        // theSameATMBtns4.style.display = "none";
+        // atmImage.style.display = "none";
+        // alertMsg.innerHTML = "";
+        // formBox.style.display = "grid";
+        // fullName.style.display = "flex";
+        // formPinTarget.style.display = "flex";
+        // logBtn.style.display = "block";
+        // fullName222[0].value = "";
+        // fullName222[0].placeholder = "                 Full Name";
+        // header.innerHTML = "Shosan PayBank Services (SPB)";
+        // logBtn.innerHTML = "Login";
+        // fullName.value = "";
+        // pinCode.value = "";
         amount = 0;
         tracker1 = 0;
     }

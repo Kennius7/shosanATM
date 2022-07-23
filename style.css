@@ -137,18 +137,18 @@ form button{
 @media only screen and (min-width: 992px){
     *, *::before, *::after {
         box-sizing: border-box;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-weight: normal;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: normal; */
     }
     body{
         padding: 0px;
         margin: 0px;
-        background-image: url("img/bg6.jpg");
+        background-image: url("img/bg4.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
     #atmHeader{
-        height: 80px;
+        height: 120px;
         color: rgb(252, 251, 248);
         font-size: 1.5rem;
         font-family: Ubuntu Medium Italics;
@@ -159,17 +159,8 @@ form button{
         align-content: center;
         text-align: center;
     }
-    
-    /* #formID{
-        display: none;
-    } */
-    
-    div button{
-        display: none;
-    }
-    
     form{
-        margin-top: -200px;
+        margin-top: 10%;
         display: grid;
         justify-content: center;
         align-content: center;
@@ -177,47 +168,48 @@ form button{
     form input{
         margin-top: 10px;
         margin-bottom: 10px;
-        width: 200px;
-        height: 30px;
+        width: 300px;
+        height: 50px;
         border-color: goldenrod;
         border-style: solid;
         border-radius: 8px;
+    }
+    form input::placeholder{
+        padding-left: 50px;
     }
     form button{
         color: white;
         background-color: goldenrod;
         margin-top: 10px;
-        width: 200px;
-        height: 30px;
+        width: 300px;
+        height: 50px;
         border-color: rgba(255, 255, 255, 0.5);
         border-style: solid;
         border-radius: 8px;
         letter-spacing: 7px;
         text-transform: uppercase;
-    }
-    form button:hover{
-        color: white;
-        background-color: rgb(117, 89, 16);
-        margin-top: 10px;
-        border-color: rgba(204, 250, 2, 0.5);
-    }
-    form button:active{
-        background-color: rgb(48, 35, 4);
-        border-color: rgba(220, 235, 156, 0.8);
+        font-weight: bolder;
     }
     #alert{
         margin-top: 20px;
-        letter-spacing: 7px;
-        font-size: 0.7rem;
-        font-family: callOfOps2;
         color: white;
+        letter-spacing: 5px;
         text-align: center;
+        font-style: italic;
+    }
+    #atmImg{
+        margin: auto;
+        width: 300px;
+        height: 200px;
+        border-color: goldenrod;
+        border-style: solid;
+        border-radius: 4px;
     }
     #topButtons1{
         display: flex;
         justify-content: space-between;
         align-content: center;
-        margin-top: 20%;
+        margin-top: 5%;
     }
     #topButtons1 button{
         width: 160px;
@@ -229,7 +221,7 @@ form button{
         display: flex;
         justify-content: space-between;
         align-content: center;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     #topButtons2 button{
         width: 160px;
@@ -241,7 +233,7 @@ form button{
         display: flex;
         justify-content: space-between;
         align-content: center;
-        margin-top: 20%;
+        margin-top: 5%;
     }
     #bottomButtons1 button{
         width: 160px;
@@ -253,7 +245,7 @@ form button{
         display: flex;
         justify-content: space-between;
         align-content: center;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     #bottomButtons2 button{
         width: 160px;
@@ -262,186 +254,6 @@ form button{
         border-width: 0px;
     }
 }
-
-
-
-styleTest{
-    color: black;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-
-/* 
-#atmHeader{
-    width: 80%;
-    height: 40px;
-    margin-left: 13%;
-    margin-top: 20px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 8px;
-    border-color: goldenrod;
-    border-style: solid;
-    border-width: 2px;
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(158, 182, 103, 0.8), rgba(0, 0, 0, 0.4));
-}
-#atmFormID{
-    width: 80%;
-    height: 150px;
-    margin-left: 13%;
-    margin-top: 50px;
-    border-color: goldenrod;
-    border-style: solid;
-    border-radius: 5px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(191, 202, 165, 1.0), rgba(0, 0, 0, 0.1));
-}
-#nameID{
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
-    border-color: goldenrod;
-    margin-left: 5px;
-    margin-top: 25px;
-    background-color: white;
-}
-#nameDiv{
-    display: flex;
-}
-#nameLabel{
-    margin-top: 25px;
-    padding-top: 7px;
-    width: 100px;
-    height: 22px;
-    background-color: white;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: goldenrod;
-    font-size: 13px;
-    text-align: center;
-}
-#locationID{
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
-    border-color: goldenrod;
-    margin-left: 5px;
-    margin-top: 25px;
-    background-color: white;
-}
-#locationDiv{
-    display: flex;
-}
-#locationLabel{
-    margin-top: 25px;
-    padding-top: 7px;
-    width: 100px;
-    height: 22px;
-    background-color: white;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: goldenrod;
-    font-size: 13px;
-    text-align: center;
-}
-#bankID{
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
-    border-color: goldenrod;
-    margin-left: 5px;
-    margin-top: 25px;
-    background-color: white;
-}
-#bankDiv{
-    display: flex;
-}
-#bankLabel{
-    margin-top: 25px;
-    padding-top: 7px;
-    width: 100px;
-    height: 22px;
-    background-color: white;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: goldenrod;
-    font-size: 13px;
-    text-align: center;
-}
-#amountID{
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
-    border-color: goldenrod;
-    margin-left: 5px;
-    margin-top: 25px;
-    background-color: white;
-}
-#amountDiv{
-    display: flex;
-}
-#amountLabel{
-    margin-top: 25px;
-    padding-top: 7px;
-    width: 100px;
-    height: 22px;
-    background-color: white;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: goldenrod;
-    font-size: 13px;
-    text-align: center;
-}
-#insertBtn{
-    background-image: linear-gradient(rgba(191, 202, 165, 1.0), rgba(0, 0, 0, 0.1));
-    width: 40%;
-    height: 30px;
-    color: brown;
-    font-size: 11px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    margin-top: 25px;
-    margin-left: 30%;
-    border-radius: 5px;
-    border-color: goldenrod;
-    border-style: solid;
-}
-#withdrawBtn{
-    background-image: linear-gradient(rgba(191, 202, 165, 1.0), rgba(0, 0, 0, 0.1));
-    width: 40%;
-    height: 30px;
-    color: brown;
-    font-size: 11px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    margin-top: 25px;
-    margin-left: 30%;
-    border-radius: 5px;
-    border-color: goldenrod;
-    border-style: solid;
-}
-#wthDiv{
-    width: 80%;
-    height: 80px;
-    margin-top: 50px;
-    margin-left: 13%;
-    border-color: goldenrod;
-    border-style: solid;
-}
-#currencyID{
-    color: white;
-    margin-top: 50px;
-    text-align: center;
-}
-#trayTable{
-    color: white;
-} */
-
-
-
 
 
 
